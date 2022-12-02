@@ -22,7 +22,7 @@ export default function Home() {
             </Typography>
             <br />
             <Typography>
-              Hi there! 👋🏼 I'm Joey, a 1st-year Master student at Computer Science
+              Hi there! 👋🏼 I&apos;m Joey, a 1st-year Master student at Computer Science
             </Typography>
           </Grid>
         </Grid>
