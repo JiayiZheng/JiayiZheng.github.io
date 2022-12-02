@@ -1,3 +1,11 @@
+.NUPurple {
+  color: #4E2A84;
+} 
+
+.shortIntro {
+  font-size: 20px;
+}
+
 .container {
   padding: 0 2rem;
 }

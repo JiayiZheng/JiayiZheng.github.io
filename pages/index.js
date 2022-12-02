@@ -14,21 +14,28 @@ export default function Home() {
       <Box mt={10}>
         <Grid container spacing={0}>
           <Grid>
-            <Avatar alt="Jiayi Zheng" src="/IMG_0006.JPG" sx={{ width: 200, height: 200, mr: 6 }}/>
+            <Avatar alt="Jiayi Zheng" src="/IMG_0006.JPG" sx={{ width: 200, 
+              height: 200, mr: 6 }}/>
           </Grid>
           <Grid>
+            <br />
             <Typography variant='h4'>
               Jiayi (Joey) Zheng
             </Typography>
             <br />
-            <Typography>
-              Hi there! 👋🏼 I&apos;m Joey, a 1st-year Master student at Computer Science
+            <Typography className={styles.shortIntro} textAlign='justify'>
+              Hi there! 👋🏼 I&apos;m Joey, a 1st-year Master student at Computer <br />
+              Science in the <a href="https://www.mccormick.northwestern.edu/computer-science/" 
+              className={styles.NUPurple}>McCormick School of Engineering</a> at&nbsp; <br />
+              <a href="https://www.northwestern.edu/" className={styles.NUPurple}>
+                Northwestern University</a>.    
             </Typography>
+            
           </Grid>
         </Grid>
       </Box>
 
-      <Divider sx={{ width: "80%", display: "block", margin: "16px auto" }} />
+      <Divider sx={{ margin: "16px auto" }} />
 
     </Container>
 
