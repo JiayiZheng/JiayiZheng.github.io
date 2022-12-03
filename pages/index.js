@@ -1,11 +1,16 @@
-import { Avatar, Divider, Grid, IconButton, Typography } from '@mui/material';
+import { Avatar, ButtonGroup, Divider, Grid, IconButton, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
+
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SchoolIcon from '@mui/icons-material/School';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import SlideshowIcon from '@mui/icons-material/Slideshow';
+import ArticleIcon from '@mui/icons-material/Article';
+
 
 export default function Home() {
   return (
@@ -40,25 +45,25 @@ export default function Home() {
             <Grid container spacing={2}>
               <Grid>
                 <IconButton>
-                  <LocationOnIcon /> &nbsp; <Typography>Evanston, IL</Typography>
+                  <LocationOnIcon /><Typography>Evanston, IL</Typography>
                 </IconButton>
               </Grid>
               <Grid>
                 <IconButton>
-                  <EmailIcon /> &nbsp; <Typography><a href="mailto:jiayizheng2024@u.northwestern.edu">
+                  <EmailIcon /><Typography><a href="mailto:jiayizheng2024@u.northwestern.edu">
                     Email</a></Typography>
                 </IconButton>
               </Grid>
               <Grid>
                 <IconButton>
-                  <SchoolIcon /> &nbsp; <Typography>
+                  <SchoolIcon /><Typography>
                   <a href="https://scholar.google.com/citations?user=hevb_cMAAAAJ&hl=en">
                     Google Scholar</a></Typography>
                 </IconButton>
               </Grid>
               <Grid>
                 <IconButton>
-                  <LinkedInIcon /> &nbsp; <Typography><a href="https://www.linkedin.com/in/jiayi-zheng-me/">
+                  <LinkedInIcon /><Typography><a href="https://www.linkedin.com/in/jiayi-zheng-me/">
                     LinkedIn</a></Typography>
                 </IconButton>
               </Grid>
@@ -72,7 +77,7 @@ export default function Home() {
       <Box>
         <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Research Interests</Typography>
         <Typography textAlign='justify'>
-          Joey was highly interested in inventing novel wearable sensing interactive 
+          Joey is highly interested in inventing novel wearable sensing interactive 
           technologies related to Personal Health Informatics. The goal is to computationally 
           measure, characterize, model, and detect behavior and health status, both physical 
           and psychological. The studies mainly focus on stress, mood, sleep, habit, 
@@ -81,17 +86,44 @@ export default function Home() {
         </Typography>
       </Box>
 
-      <br />
-      <Box>
+      <Box mt={5}>
         <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Publications</Typography>
+        <Typography>(* denotes equal contribution)</Typography>
+
+        <Typography textAlign='justify'>
+          <br />
+          [1] Wei Sun*, Tuochao Chen*, <b><u>Jiayi Zheng*</u></b>, Zhenyu Lei, Lucy Wang, Benjamin Steeper, 
+          Peng He, Matthew Dressa, Feng Tian, Cheng Zhang. VibroSense: Recognizing Home Activities 
+          by Deep Learning Subtle Vibrations on an Interior Surface of a House from a Single Point 
+          Using Laser Doppler Vibrometry. The Proceedings of the ACM on Interactive, Mobile, Wearable 
+          and Ubiquitous Technologies (IMWUT) / Also presented at The ACM international joint conference 
+          on pervasive and ubiquitous computing (UbiComp) 2020.
+        </Typography>
+        <Box display="flex" justifyContent="flex-end">
+          <IconButton>
+            <PictureAsPdfIcon /><Typography>
+              <a href="https://dl.acm.org/doi/abs/10.1145/3411828">
+                pdf</a></Typography>
+          </IconButton>
+          <IconButton>
+            <SlideshowIcon /><Typography>
+              <a href="https://www.youtube.com/watch?v=SAntPSGF2r0">
+                video</a></Typography>
+          </IconButton>
+          <IconButton>
+            <ArticleIcon /><Typography>
+              <a href="https://news.cornell.edu/stories/2020/09/device-tracks-house-appliances-through-vibration-ai">
+                featured on</a></Typography>
+          </IconButton>
+        </Box>
+      
       </Box>
 
-      <Box>
+      <Box mt={5}>
         <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Projects</Typography>
       </Box>
 
-      <br />
-      <Box>
+      <Box mt={5}>
         <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Education</Typography>
         <Typography textAlign='justify'>Before joining Northwestern, Joey obtained 
         a B.S. in Computer Science and Mathematics from&nbsp;
