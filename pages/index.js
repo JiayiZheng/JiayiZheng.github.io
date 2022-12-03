@@ -1,7 +1,11 @@
-import { Avatar, Divider, Grid, Typography } from '@mui/material';
+import { Avatar, Divider, Grid, IconButton, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SchoolIcon from '@mui/icons-material/School';
 
 export default function Home() {
   return (
@@ -22,6 +26,7 @@ export default function Home() {
             <Typography variant='h4'>
               Jiayi (Joey) Zheng
             </Typography>
+
             <br />
             <Typography className={styles.shortIntro} textAlign='justify'>
               Hi there! 👋🏼 I&apos;m Joey, a 1st-year Master student at Computer <br />
@@ -31,6 +36,33 @@ export default function Home() {
                 Northwestern University</a>.    
             </Typography>
             
+            <br />
+            <Grid container spacing={2}>
+              <Grid>
+                <IconButton>
+                  <LocationOnIcon /> &nbsp; <Typography>Evanston, IL</Typography>
+                </IconButton>
+              </Grid>
+              <Grid>
+                <IconButton>
+                  <EmailIcon /> &nbsp; <Typography><a href="mailto:jiayizheng2024@u.northwestern.edu">
+                    Email</a></Typography>
+                </IconButton>
+              </Grid>
+              <Grid>
+                <IconButton>
+                  <SchoolIcon /> &nbsp; <Typography>
+                  <a href="https://scholar.google.com/citations?user=hevb_cMAAAAJ&hl=en">
+                    Google Scholar</a></Typography>
+                </IconButton>
+              </Grid>
+              <Grid>
+                <IconButton>
+                  <LinkedInIcon /> &nbsp; <Typography><a href="https://www.linkedin.com/in/jiayi-zheng-me/">
+                    LinkedIn</a></Typography>
+                </IconButton>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
