@@ -1,7 +1,11 @@
-import { Avatar, Divider, Grid, Typography } from '@mui/material';
+import { Avatar, Divider, Grid, IconButton, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SchoolIcon from '@mui/icons-material/School';
 
 export default function Home() {
   return (
@@ -14,21 +18,56 @@ export default function Home() {
       <Box mt={10}>
         <Grid container spacing={0}>
           <Grid>
-            <Avatar alt="Jiayi Zheng" src="/IMG_0006.JPG" sx={{ width: 200, height: 200, mr: 6 }}/>
+            <Avatar alt="Jiayi Zheng" src="/IMG_0006.JPG" sx={{ width: 200, 
+              height: 200, mr: 6 }}/>
           </Grid>
           <Grid>
+            <br />
             <Typography variant='h4'>
               Jiayi (Joey) Zheng
             </Typography>
+
             <br />
-            <Typography>
-              Hi there! 👋🏼 I&apos;m Joey, a 1st-year Master student at Computer Science
+            <Typography className={styles.shortIntro} textAlign='justify'>
+              Hi there! 👋🏼 I&apos;m Joey, a 1st-year Master student at Computer <br />
+              Science in the <a href="https://www.mccormick.northwestern.edu/computer-science/" 
+              className={styles.NUPurple}>McCormick School of Engineering</a> at&nbsp; <br />
+              <a href="https://www.northwestern.edu/" className={styles.NUPurple}>
+                Northwestern University</a>.    
             </Typography>
+            
+            <br />
+            <Grid container spacing={2}>
+              <Grid>
+                <IconButton>
+                  <LocationOnIcon /> &nbsp; <Typography>Evanston, IL</Typography>
+                </IconButton>
+              </Grid>
+              <Grid>
+                <IconButton>
+                  <EmailIcon /> &nbsp; <Typography><a href="mailto:jiayizheng2024@u.northwestern.edu">
+                    Email</a></Typography>
+                </IconButton>
+              </Grid>
+              <Grid>
+                <IconButton>
+                  <SchoolIcon /> &nbsp; <Typography>
+                  <a href="https://scholar.google.com/citations?user=hevb_cMAAAAJ&hl=en">
+                    Google Scholar</a></Typography>
+                </IconButton>
+              </Grid>
+              <Grid>
+                <IconButton>
+                  <LinkedInIcon /> &nbsp; <Typography><a href="https://www.linkedin.com/in/jiayi-zheng-me/">
+                    LinkedIn</a></Typography>
+                </IconButton>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
 
-      <Divider sx={{ width: "80%", display: "block", margin: "16px auto" }} />
+      <Divider sx={{ margin: "16px auto" }} />
 
     </Container>
 
