@@ -1,4 +1,4 @@
-import { Avatar, ButtonGroup, Divider, Grid, IconButton, Link, Typography } from '@mui/material';
+import { Avatar, Card, Divider, Grid, IconButton, Link, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
@@ -121,6 +121,31 @@ export default function Home() {
 
       {/* <Box mt={5}>
         <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Projects</Typography>
+        <Grid container spacing={2}>
+          <Grid>
+            <Card>
+              <Typography>
+                VibroSense System: recognize activities of electrical and water appliances 
+                throughout a house by observing the corresponding structural vibration patterns 
+                using a single-point laser
+                
+              </Typography>
+            </Card>
+          </Grid>
+
+          <Grid>
+            <Card>
+              <Typography>
+                VibroSense System: recognize activities of electrical and water appliances 
+                throughout a house by observing the corresponding structural vibration patterns 
+                using a single-point laser
+                
+              </Typography>
+            </Card>
+          </Grid>
+
+
+        </Grid>
       </Box> */}
 
       <Box mt={5}>
