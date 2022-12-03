@@ -1,4 +1,4 @@
-import { Avatar, ButtonGroup, Divider, Grid, IconButton, Typography } from '@mui/material';
+import { Avatar, ButtonGroup, Divider, Grid, IconButton, Link, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
@@ -93,11 +93,11 @@ export default function Home() {
         <Typography textAlign='justify'>
           <br />
           [1] Wei Sun*, Tuochao Chen*, <b><u>Jiayi Zheng*</u></b>, Zhenyu Lei, Lucy Wang, Benjamin Steeper, 
-          Peng He, Matthew Dressa, Feng Tian, Cheng Zhang. VibroSense: Recognizing Home Activities 
+          Peng He, Matthew Dressa, Feng Tian, Cheng Zhang.<b><i> VibroSense: Recognizing Home Activities 
           by Deep Learning Subtle Vibrations on an Interior Surface of a House from a Single Point 
-          Using Laser Doppler Vibrometry. The Proceedings of the ACM on Interactive, Mobile, Wearable 
-          and Ubiquitous Technologies (IMWUT) / Also presented at The ACM international joint conference 
-          on pervasive and ubiquitous computing (UbiComp) 2020.
+          Using Laser Doppler Vibrometry. </i></b>
+          The Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) / 
+          Also presented at The ACM international joint conference on pervasive and ubiquitous computing (UbiComp) 2020.
         </Typography>
         <Box display="flex" justifyContent="flex-end">
           <IconButton>
@@ -119,9 +119,9 @@ export default function Home() {
       
       </Box>
 
-      <Box mt={5}>
+      {/* <Box mt={5}>
         <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Projects</Typography>
-      </Box>
+      </Box> */}
 
       <Box mt={5}>
         <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Education</Typography>
@@ -129,7 +129,16 @@ export default function Home() {
         a B.S. in Computer Science and Mathematics from&nbsp;
         <a href="https://www.buffalo.edu/" className={styles.UBBlue}>SUNY - University at Buffalo</a>.</Typography>
       </Box>
+
+      <Divider sx={{ margin: "16px auto" }} />
+      <Typography variant="caption" component='p' textAlign="center">
+        Made by Joey using <Link href='https://mui.com/'>MUI</Link> and <Link href='https://nextjs.org/'>Next.js</Link>
+      </Typography>
+      <Typography variant="caption" component='p' textAlign="center">
+        © 2022 jiayizheng
+      </Typography>
     </Container>
+
 
     // <div className={styles.container}>
     //   <Head>
