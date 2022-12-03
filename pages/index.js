@@ -69,6 +69,34 @@ export default function Home() {
 
       <Divider sx={{ margin: "16px auto" }} />
 
+      <Box>
+        <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Research Interests</Typography>
+        <Typography textAlign='justify'>
+          Joey was highly interested in inventing novel wearable sensing interactive 
+          technologies related to Personal Health Informatics. The goal is to computationally 
+          measure, characterize, model, and detect behavior and health status, both physical 
+          and psychological. The studies mainly focus on stress, mood, sleep, habit, 
+          and others related to mental health, and then use that information to create 
+          just-in-time, personalized health interventions.
+        </Typography>
+      </Box>
+
+      <br />
+      <Box>
+        <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Publications</Typography>
+      </Box>
+
+      <Box>
+        <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Projects</Typography>
+      </Box>
+
+      <br />
+      <Box>
+        <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Education</Typography>
+        <Typography textAlign='justify'>Before joining Northwestern, Joey obtained 
+        a B.S. in Computer Science and Mathematics from&nbsp;
+        <a href="https://www.buffalo.edu/" className={styles.UBBlue}>SUNY - University at Buffalo</a>.</Typography>
+      </Box>
     </Container>
 
     // <div className={styles.container}>
